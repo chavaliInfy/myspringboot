@@ -83,7 +83,7 @@ pipeline {
 	            dir("${params.AppName}") {
 	                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', 
 	                        accessKeyVariable: 'AWS_ACCESS_KEY_ID', 
-	                        credentialsId: 'AWS_Credentials', 
+	                        credentialsId: 'test', 
 	                        secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
 	                    withCredentials([kubeconfigFile(credentialsId: 'K8S', 
 	                        variable: 'KUBECONFIG')]) {
