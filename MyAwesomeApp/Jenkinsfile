@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('checkout') {
         steps {
-            git 'https://github.com/Prasad459/myspringboot.git'
+            git 'https://github.com/chavaliInfy/myspringboot.git'
         }
     }
     stage('Build Maven'){
