@@ -52,7 +52,7 @@ pipeline {
             def buildNumber= BUILD_NUMBER   
           //  sh "docker build -t ecr-dev-repo-jenkins-eks/java-web-app:${buildNumber} ."
 		   
-            sh "docker build -t ecr-dev-repo-jenkins-eks/javaspringboot-web-app:latest /var/lib/jenkins/workspace/jenkinsfile-eks/MyAwesomeApp/Dockerfile"
+            sh "docker build -t ecr-dev-repo-jenkins-eks/javaspringboot-web-app:latest /var/lib/jenkins/workspace/jenkinsfile-eks/MyAwesomeApp/"
            }
           }
         }
