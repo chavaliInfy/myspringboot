@@ -25,7 +25,8 @@ pipeline {
 			}
     		steps {
         		dir("${params.AppName}") {
-        			sh 'mvn -f /var/lib/jenkins/workspace/jenkinsfile-eks/MyAwesomeApp/pom.xml clean package'
+        		//	sh 'mvn -f /var/lib/jenkins/workspace/jenkinsfile-eks/MyAwesomeApp/pom.xml clean package'
+				sh 'mvn -f /var/lib/jenkins/workspace/clusterpipeline/MyAwesomeApp/pom.xml clean package'
         		//	sh 'mvn clean package'
         		}
     		}
